@@ -1,0 +1,7 @@
+x=int(input())
+coupon1=x-(x//10)
+coupon2=x-100
+if coupon1<coupon2:
+    print(coupon1)
+else:
+    print(coupon2)
