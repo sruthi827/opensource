@@ -1,0 +1,17 @@
+n=int(input())
+a=list(map(int,input().split()))
+b=[]
+for i in range(n):
+    if i==0:
+        val=sum(j for j in a[1:])
+        
+    elif i==n-1:
+        val=sum(j for j in a[:i])
+    else:
+        sum_left=sum(j for j in a[:i])
+        sum_right=sum(j for j in a[i+1:])
+        val=abs(sum_left-sum_right)
+    b.append(val)
+print(" ".join(map(str,b)))
+        
+        
