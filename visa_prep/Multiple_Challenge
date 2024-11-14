@@ -1,0 +1,6 @@
+n=int(input())
+cnt3=n//3
+cnt5=n//5
+cnt15=n//15
+multiples=cnt3+cnt5-cnt15
+print(multiples)
