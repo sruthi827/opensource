@@ -1,0 +1,17 @@
+s=input()
+con1=0
+con2=0
+con3=0
+con4=0
+if s[0]=="+":
+    con1=1
+if s[1] in (str(i) for i in range(10)) and s[2] in (str(i) for i in range(9)):
+    con2=1
+if s[3]==" ":
+    con3=1
+if len(s[4:])==10 and sum(int(i) for i in s[4:])>0:
+    con4=1
+if con1 and con2 and con3 and con4:
+    print("Correct")
+else:
+    print("Incorrect")
