@@ -1,0 +1,7 @@
+n=int(input())
+i=int(input())
+left_shift=1<<(i-1)
+if n & left_shift:
+    print("true")
+else:
+    print("false")
