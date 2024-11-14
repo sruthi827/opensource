@@ -1,0 +1,7 @@
+n=int(input())
+m=[]
+for r in range(n):
+    r=list(map(int,input().split()))
+    m.append(r[::-1])
+for row in m:
+    print(" ".join(map(str,row)))
