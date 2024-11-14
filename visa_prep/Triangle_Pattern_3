@@ -1,0 +1,12 @@
+n=int(input())
+for i in range(1,n+1):
+    j=1
+    while j<2*n+1:
+        if j<=i:
+            print(j,end="")
+        elif 2*n-j<i:
+            print(2*n-j+1,end="")
+        else:
+            print("",end=" ")
+        j+=1
+    print()
