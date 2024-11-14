@@ -1,0 +1,7 @@
+x,n=map(int,input().split())
+rem_passengers=(n)-(x*100)
+planes=rem_passengers//100
+if rem_passengers%100==0:
+    print(planes)
+else:
+    print(planes+1)
