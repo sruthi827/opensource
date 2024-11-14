@@ -1,0 +1,15 @@
+import math
+n=int(input())
+if n<0:
+    rev=str(n)[1:]
+    r=int(rev[::-1])*(-1)
+else:
+    r=int(str(n)[::-1])
+    
+
+m=math.pow(2,31)
+if r>=-m  and r<=m-1:
+    print(r)
+else:
+    
+    print(0)
