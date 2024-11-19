@@ -1,0 +1,14 @@
+n=int(input())
+m=[]
+for i in range(n):
+    r=list(map(int,input().split()))
+    m.append(r)
+t=[]
+for i in range(n):
+    r=[]
+    for j in range(n):
+        r.append(m[j][i])
+    t.append(r)
+       
+for i in t:
+    print(" ".join(map(str,i)))
