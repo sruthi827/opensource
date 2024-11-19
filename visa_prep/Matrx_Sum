@@ -1,0 +1,17 @@
+n=int(input())
+m=[]
+for i in range(n):
+    l=list(map(int,input().split()))
+    m.append(l)
+rows_tot=[0]*n
+cols_tot=[0]*n
+res=[0]*n
+for i in range(n):
+    for j in range(n):
+        rows_tot[i]+=m[i][j]
+        cols_tot[j]+=m[i][j]
+for i in range(n):
+    res[i]=rows_tot[i]+cols_tot[i]
+print(" ".join(map(str,res)))
+    
+    
